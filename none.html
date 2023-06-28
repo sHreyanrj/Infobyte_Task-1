@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Landing Page</title>
+  <style>
+    /* Reset default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    /* Social media icons */
+    .social-media-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-media-icons a {
+      display: inline-block;
+      margin: 5px;
+      width: 30px;
+      height: 30px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    /* Hero section styles */
+    .hero-section {
+      background-image: url('path/to/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-content {
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-content h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Main content styles */
+    main {
+      padding: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const aboutLink = document.getElementById("about-link");
+      const aboutSection = document.getElementById("about-section");
+
+      aboutLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Landing Page</h1>
+  </header>
+
+  <div class="social-media-icons">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com/yourpage" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <div class="hero-section">
+    <div class="hero-content">
+      <h2>Discover Amazing Products</h2>
+      <p>Find the best deals on our platform and experience the ultimate shopping experience.</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="about-section">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies dolor in dictum scelerisque. Sed facilisis ultrices interdum. Fusce dictum felis ut arcu consequat, at aliquam felis semper. Curabitur at ante in nunc fermentum dignissim. Etiam aliquet neque urna, id volutpat arcu feugiat sed.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Landing Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
